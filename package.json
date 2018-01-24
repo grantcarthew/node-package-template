@@ -1,0 +1,45 @@
+{
+  "name": "####################################",
+  "version": "1.0.0",
+  "description": "####################################",
+  "main": "index.js",
+  "scripts": {
+    "clean": "del index.js",
+    "test": "jest",
+    "watch": "jest --watch",
+    "lint": "standard",
+    "build": "npm run clean && standard && babel console-probe.js --out-file index.js && npm test",
+    "upgrade": "npm run upgrade:rm && npm run upgrade:ncu && npm run upgrade:npm-install",
+    "upgrade:rm": "rm node_modules -Rf",
+    "upgrade:ncu": "npm-check-updates --upgradeAll",
+    "upgrade:npm-install": "npm install"
+  },
+  "keywords": [
+    "####################################"
+  ],
+  "author": "Grant Carthew",
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "test",
+      "expect",
+      "jest",
+      "beforeAll",
+      "afterAll",
+      "describe"
+    ],
+    "ignore": [
+      "index.js"
+    ]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "del-cli": "^1.1.0",
+    "jest": "^22.1.4",
+    "standard": "^10.0.3",
+    "npm-check-updates": "^2.14.0"
+  }
+}

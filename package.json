@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "####################################",
   "main": "index.js",
+  "homepage": "####################################",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grantcarthew/node-#######################################.git"
   },
+  "bugs": "https://github.com/grantcarthew/####################################/issues",
   "scripts": {
     "clean": "del index.js",
     "test": "jest",

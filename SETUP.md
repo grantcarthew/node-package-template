@@ -4,6 +4,8 @@ Follow the below steps to setup for a new Node.js project package to be publishe
 
 * Clone this repository.
 * Rename the directory.
+* Delete the .git diretory.
+* Run git init.
 * Edit package.json file to meet project needs.
 * Edit the LICENSE file and change the year.
 * Edit the README.md file to meet the project needs.

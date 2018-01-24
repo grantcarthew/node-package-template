@@ -5,3 +5,4 @@ Follow the below steps to setup for a new Node.js project package to be publishe
 * Edit package.json file to meet project needs.
 * Edit the LICENSE file and change the year.
 * Edit the README.md file to meet the project needs.
+* Delete this SETUP.md file.

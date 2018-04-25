@@ -14,7 +14,7 @@
     "test": "jest",
     "watch": "jest --watch",
     "lint": "standard",
-    "build": "npm run clean && standard && babel console-probe.js --out-file index.js && npm test",
+    "build": "npm run clean && standard && babel ############## --out-file index.js && npm test",
     "upgrade": "npm run upgrade:rm && npm run upgrade:ncu && npm run upgrade:npm-install",
     "upgrade:rm": "rm node_modules -Rf",
     "upgrade:ncu": "npm-check-updates --upgradeAll",

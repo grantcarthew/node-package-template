@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "del index.js",
     "test": "jest",
-    "watch": "jest --watch",
+    "test:watch": "jest --watch",
     "lint": "standard",
     "build": "npm run clean && standard && babel ############## --out-file index.js && npm test",
     "upgrade": "npm run upgrade:rm && npm run upgrade:ncu && npm run upgrade:npm-install",
@@ -36,6 +36,14 @@
     ],
     "ignore": [
       "index.js"
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/tests/"
     ]
   },
   "dependencies": {
